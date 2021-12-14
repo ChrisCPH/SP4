@@ -1,0 +1,61 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Main
+class UI
+class Player
+class Enemy
+class Weapons
+class Level
+class Combat
+
+UI -left-> Main
+Level -left-> UI
+UI <-- Player
+Combat <-- Player
+Level <-right- Combat
+Combat <-- Enemy
+Level <-- Enemy
+Combat <-- Weapons
+
+
+Main : main(String[] args)
+
+UI : String Input
+UI : getUserInput()
+UI : menu()
+UI : startGame()
+
+Enemy : String Name
+Enemy : int Damage
+Enemy : int Health
+Enemy : String Type
+
+Player : String Name
+Player : int Health
+Player : int Gold
+Player : Player(String name)
+Player : setGold(int gold)
+Player : getGold()
+
+Weapons : int LowDamage
+Weapons : int TopDamage
+Weapons : String Type
+Weapons : int Cost
+Weapons : toString()
+
+Level : gameIntroduction(String name)
+Level : firstLevel()
+Level : oldManDialog()
+Level : caveDialog()
+Level : ItemsBoughtCheck()
+Level : secondLevel()
+Level : grassDialog()
+Level : tryToRun()
+Level : thirdLevel()
+Level : hoodedManDialog()
+Level : fourthLevel()
+Level : fifthLevel()
+
+Combat : combat(Enemy enemy, Items items, Player player)
+@enduml

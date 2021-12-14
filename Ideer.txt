@@ -1,0 +1,117 @@
+Måske noget med et tekstbaseret spil
+Hver metode kalder den næste 
+
+Give the adventurer some sort of purpose some quest so that they arent just
+walking around for no reason (maybe they are out seeking treasure, on their
+way home kek or traveling to a new beatiful city)
+
+Your an adventurer and u walk around to these different places and
+have different decisions to make in each new area you arrive
+
+First area u have to the choice to keep walking down the road or 
+talk to the old man standing on the side of the road hunched over. 
+On your right u see a cave and wonder what is inside.
+
+U would then pick a choice and if u talked to the old man he would tell
+u about the cave and warn u of the giant spider inside and u could choose
+to purchase a weapon to fight with or keep going. 
+
+Would need some way to save the players choices (dbconnector and textfile)
+
+IDEAS
+You're starting to feel tired and you wanna go lay down somewhere and take
+a nap. On your right you see an open field with some soft looking grass and
+on your left you see a formation of rocks that might give some cover if it
+starts to rain.
+1. Go sleep in the grass.
+2. Go sleep in the rock formation.
+3. Keep going even though you're tired.
+
+1: You walk over to the grass and lie down to sleep for a couple of hours. 
+All of a sudden you wake up and find yourself surruonded by goblins. What do
+you do.
+1.1: Fight (the odds of winning depend on which weapon u have)
+1.2: Try to run.
+1.3: Pay them to go away.
+
+1.1: When a fight happen the player will roll for a random number between 1
+and 10 (range depends on weapon) and that damage will be done to the enemy.
+In this case the goblins could have 5 hp and do 1 damage and it would be turn
+based so the player starts and then all goblins attack. Player could start
+with 40 hp maybe??
+
+1.2: Roll between 1 and 4 if 1 you escape, 2 and 3 u get the other options
+back, 4 the goblins kill u.
+
+1.3: Costs the player 15 gold but the walk away unharmed
+
+2: You sleep safely in the rock formation. U wake up refreshed and ready to
+keep going.
+
+3: You're still tired but you keep walking down the road. (could lower the
+players damage for the rest of the game)
+
+Level 3
+You come across someone who needs help
+(The person who need help seems shady so the player doesnt wanna help)
+You get no reward until later in level 5 where the person helps you in a
+fight (maybe the fight cant be won without the help)
+
+You keep walking down the road and suddenly a dark shady character appears
+on the road ahead of you. Hes wearing a hooded cape and you cannot make out
+his face. He asks if you can help him with a problem and points towards the
+woods.
+1. Help the man with his problem.
+2. Decline to help.
+
+1: You follow him into the woods. Its a long walk and you try asking how
+much when we are there but get no response. You start to see smoke out in
+the distance and as you get closer its from a fire in the middle of a goblin
+camp. The hooded man explains that goblins attacked him while he was asleep
+and he had to give up his belongings and weapons in order to survive.
+1.1 Fight the goblins.
+2.1 Give extra weapon to the hooded man to help fight
+(only if you have more than 1 weapon)
+3.1 Decline to help.
+
+1.1: 5 goblins 5 health 2 damage
+
+Once you defeated the goblins the hooded man leaves you with out thanking you.
+You find 10 gold and a healing potion in the goblin camp
+
+Level 4
+You arrive at a small town. As you are walking through the town you come upon
+a blacksmith and an alchemist.
+1. Talk to blacksmith
+2. Talk to alchemist
+3. Leave
+
+Alchemist
+1. Buy healing potion for 5 gold (after you pick this option you can enter the amount)
+2. He has a quest for you to bring him the blood of a 
+3. leave
+
+
+Blacksmith
+1. He sells a slighty better weapon
+2. He has a quest for you to obtain iridium which he can use to craft an axe
+3. Leave
+
+2: The iridium is found inside an ogre cave just outside of town. You fight
+two ogres and the ogre king
+Ogre: 10 health 4 damage
+Ogre king: 20 health 5 damage
+Once defeated you receive one healing potion and the iridium ore. You bring
+it back to the blacksmith and he crafts you a very good weapon (5 - 7 damage ???)
+
+
+Basilisk blood quest 
+You travel to the woods just outside of town and find a basilisk.
+
+Level 5
+dark shady char helps in fight with a bow
+After leaving town you run in the hooded man again. He has another quest for you.
+Up in the mountains is a dragons lair. This dragon is guarding a giant treasure and
+defeating the dragon would make you very wealthy.
+
+(add some a fist weapon that u can use when you have no weapon)

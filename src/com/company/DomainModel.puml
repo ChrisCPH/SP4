@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+object Level
+object Player
+object Gold
+object Items
+object Health
+object Negatives
+object Enemy
+object Damage
+object Type
+object Quest
+object Choices
+
+
+Player <-- Gold
+Player <-- Items
+Player <-- Health
+Player <-- Negatives
+Player <-- Damage
+Player -Up-> Level
+Enemy <-- Health
+Enemy <-- Damage
+Enemy <-- Type
+Enemy -Up-> Level
+Level <-- Quest
+Quest <-- Choices
+
+'Negatives would be things not having slept enough and therefore having lower damage.
+@enduml

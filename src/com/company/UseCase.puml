@@ -1,0 +1,27 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+usecase "StartGame" as UCA1
+usecase "PlayerName" as UCA2
+usecase "ChooseLevel" as UCA3
+usecase "QuitGame" as UCA4
+usecase "NewQuest" as UCA5
+usecase "Gold" as UCA6
+usecase "Items" as UCA7
+usecase "Fight" as UCA8
+usecase "Consequences" as UCA9
+
+Player -right-> UCA1
+UCA1 -right-> UCA2
+UCA2 -right-> UCA3
+UCA3 -right-> UCA4
+UCA3 -down-> UCA5
+UCA5 -down-> UCA6
+UCA5 -down-> UCA7
+UCA5 -down-> UCA8
+UCA6 --> UCA9
+UCA7 --> UCA9
+UCA8 --> UCA9
+UCA9 --> UCA5
+
+@enduml

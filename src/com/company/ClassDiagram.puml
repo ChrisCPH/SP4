@@ -1,0 +1,95 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Main
+class UI
+class Player
+class Enemy
+class Weapons
+class Level
+class Combat
+class Healing
+
+UI -left-> Main
+Level -left-> UI
+UI <-- Player
+Combat <-- Player
+Level <-right- Combat
+Combat <-- Enemy
+Level <-- Enemy
+Combat <-- Weapons
+Player <-- Healing
+Combat <-- Healing
+
+Main : main(String[] args)
+
+UI : String Input
+UI : getUserInput()
+UI : menu()
+UI : startGame()
+UI : endGame()
+
+Enemy : String Name
+Enemy : int Damage
+Enemy : int Health
+Enemy : String Type
+Enemy : int amount'
+Enemy : Arraylist<Enemy> enemy
+Enemy : Enemy(String name, int damage, int health, String type, int amount)
+
+Player : String Name
+Player : int Health = 30
+Player : int Gold = 10
+Player : boolean noGoldLeft = false
+Player : Arraylist<Player> players
+Player : Player()
+Player : Player(String name)
+Player : setGold(int gold)
+Player : getGold()
+Player : checkGold()
+
+Weapons : int LowDamage
+Weapons : int TopDamage
+Weapons : String Type
+Weapons : int Cost
+Weapons : Arraylist<Weapons> weapons
+Weapons : Weapons(String type, int cost, int topDamage, int lowDamage)
+Weapons : toString()
+
+Level : gameIntroduction(String name)
+Level : boolean oldManDialogCompleted = false;
+Level : boolean exploredCave = false;
+Level : boolean sleep = false;
+Level : boolean swordBought = false;
+Level : boolean daggerBought= false;
+Level : boolean triedToRun = false;
+Level : boolean helpedStranger = false;
+Level : boolean gaveWeapon = false;
+Level : boolean blacksmithWeaponBought = false;
+Level : boolean blacksmithDialogDone = false;
+Level : boolean alchemistDialogDone = false;
+Level : boolean hoodedManHelping = false;
+Level : firstLevel()
+Level : oldManDialog()
+Level : caveDialog()
+Level : ItemsBoughtCheck()
+Level : secondLevel()
+Level : grassDialog()
+Level : tryToRun()
+Level : thirdLevel()
+Level : hoodedManDialog()
+Level : fourthLevel()
+Level : blacksmithDialog()
+Level : alchemistDialog()
+Level : iridiumQuest()
+Level : basiliskBloodQuest()
+Level : fifthLevel()
+
+Combat : boolean exhausted = false;
+Combat : combat(Enemy enemy, Items items, Player player)
+
+Healing : int value
+Healing : int cost
+Healing : ArrayList<Healing> healingPotion
+Healing : Healing(int value, int cost)
+@enduml
